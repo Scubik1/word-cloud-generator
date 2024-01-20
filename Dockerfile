@@ -1,6 +1,7 @@
 FROM alpine:3.17
 RUN apk add gcompat
-COPY --chown=root:root --chmod=755 ./artifacts/linux/word-cloud-generator /opt
+#COPY --chown=root:root --chmod=755 ./artifacts/linux/word-cloud-generator /opt
+COPY --chmod=755 ./artifacts/linux/word-cloud-generator /opt
 RUN ls -lah /opt 
 EXPOSE 8888
 #ENTRYPOINT sh
