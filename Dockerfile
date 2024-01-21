@@ -6,4 +6,4 @@ RUN chmod +x /opt/word-cloud-generator
 RUN ls -lah /opt 
 EXPOSE 8888
 #ENTRYPOINT sh
-ENTRYPOINT /opt/word-cloud-generator
+ENTRYPOINT ["/opt/word-cloud-generator"]
